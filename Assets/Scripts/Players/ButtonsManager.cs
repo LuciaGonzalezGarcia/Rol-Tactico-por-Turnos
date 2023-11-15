@@ -391,44 +391,35 @@ public class ButtonsManager : MonoBehaviour
             Enemy2Pathfinding.IAStart = true;
 
 
-        //Players
-        if (Test.playerTurn == 1)
-            Test.playerTurn = 2;
 
-        else if (Test.playerTurn == 2)
-            Test.playerTurn = 3;
-
-        else if (Test.playerTurn == 3)
-            Test.playerTurn = 1;
-
-        /*Player1
+        //Player1
         if (Test.playerTurn == 1 && Test.player2.activeSelf)
             Test.playerTurn = 2;
 
-        else if (Test.playerTurn == 1 && !Test.player2.activeSelf)
+        else if (Test.playerTurn == 1 && Test.player3.activeSelf)
             Test.playerTurn = 3;
 
-        else if (Test.playerTurn == 1 && !Test.player3.activeSelf)
+        else if (Test.playerTurn == 1 && Test.player1.activeSelf)
             Test.playerTurn = 1;
 
         //Player 2
         else if (Test.playerTurn == 2 && Test.player3.activeSelf)
             Test.playerTurn = 3;
 
-        else if (Test.playerTurn == 2 && !Test.player3.activeSelf)
+        else if (Test.playerTurn == 2 && Test.player1.activeSelf)
             Test.playerTurn = 1;
 
-        else if (Test.playerTurn == 2 && !Test.player1.activeSelf)
+        else if (Test.playerTurn == 2 && Test.player2.activeSelf)
             Test.playerTurn = 2;
 
         //Player 3
         else if (Test.playerTurn == 3 && Test.player1.activeSelf)
             Test.playerTurn = 1;
 
-        else if (Test.playerTurn == 3 && !Test.player1.activeSelf)
+        else if (Test.playerTurn == 3 && Test.player2.activeSelf)
             Test.playerTurn = 2;
 
-        else if (Test.playerTurn == 3 && !Test.player2.activeSelf)
-            Test.playerTurn = 3;*/
+        else if (Test.playerTurn == 3 && Test.player3.activeSelf)
+            Test.playerTurn = 3;
     }
 }
